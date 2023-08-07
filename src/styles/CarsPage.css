@@ -1,0 +1,60 @@
+.cars {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.carsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  width: 100%;
+  padding: 25px 60px;
+  min-height: 250px;
+  background-image: url("../images/car-5383371_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 75%;
+  min-width: 100%;
+  border-radius: 20px;
+  color: white;
+}
+.carsTitle h2 {
+  font-size: 35px;
+}
+.carsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+.carBrand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+.carBrand:hover {
+  cursor: pointer;
+}
+.skoda {
+  background-image: url("../images/skoda.jpg");
+  background-position-y: 75%;
+  background-position-x: 46%;
+  background-size: cover;
+}
+.toyota {
+  background-image: url("../images/toyota.jpg");
+  background-position-y: 50%;
+  background-position-x: 15%;
+  background-size: cover;
+}
+.lexus {
+  background-image: url("../images/lexus.jpg");
+  background-size: cover;
+  background-position-y: 50%;
+  background-position-x: 40%;
+}

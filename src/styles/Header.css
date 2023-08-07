@@ -6,6 +6,11 @@ nav {
   color: black;
 }
 
+.logo:hover {
+  transition: color 0.3s;
+  color: green;
+}
+
 .navList {
   display: flex;
   list-style: none;
@@ -26,4 +31,5 @@ nav {
 .navList a.active {
   color: green;
   border-bottom: 1.5px solid green;
+  font-weight: bold;
 }

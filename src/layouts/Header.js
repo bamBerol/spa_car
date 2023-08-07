@@ -4,8 +4,7 @@ import "../styles/Header.css";
 
 const navList = [
   { name: "Home", path: "/", exact: true },
-  { name: "O nas", path: "/about" },
-  { name: "Oferta", path: "/offer" },
+  { name: "Samochody", path: "/cars" },
   { name: "Kontakt", path: "/contact" },
 ];
 
