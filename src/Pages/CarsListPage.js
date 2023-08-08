@@ -1,15 +1,18 @@
 import React from "react";
-import "../styles/CarsPage.css";
+import { Link } from "react-router-dom";
+import "../styles/CarsListPage.css";
 
 const carBrands = ["Toyota", "Skoda", "Lexus"];
 
-const CarsPage = () => {
+const CarsListPage = () => {
   const brandList = carBrands.map((brand) => {
     let brandClass = brand.toLocaleLowerCase() + " carBrand";
     return (
-      <div className={brandClass}>
-        <h3>{brand}</h3>
-      </div>
+      <Link to={`/car/${brand.toLocaleLowerCase()}`} className={brandClass}>
+        <div className="brandName">
+          <h2>{brand}</h2>
+        </div>
+      </Link>
     );
   });
   return (
@@ -22,4 +25,4 @@ const CarsPage = () => {
   );
 };
 
-export default CarsPage;
+export default CarsListPage;
