@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-//import { CompatRouter } from "react-router-dom-v5-compat";
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";

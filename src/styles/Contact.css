@@ -14,10 +14,10 @@
   width: 100%;
   padding: 25px 60px;
   min-height: 250px;
-  background-image: url("../images/car-5383371_1920.jpg");
+  background-image: url("../images/contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 75%;
+  background-position-y: 40%;
   min-width: 100%;
   border-radius: 20px;
   color: white;
@@ -27,15 +27,10 @@
 }
 .contactWrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   flex-grow: 1;
   width: 100%;
-}
-.contactItem {
-  display: flex;
-  align-items: flex-start;
-  padding: 0 40px;
-  width: 100%;
+  gap: 10px;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Contact.css";
+import ContactItem from "../components/ContactItem";
 
 const contact = [
   { name: "Telefon kontaktowy", text: "608 266 289" },
@@ -8,15 +9,8 @@ const contact = [
 ];
 
 const ContactPage = () => {
-  const items = contact.map((item) => (
-    <div className="contactItem">
-      <div>
-        <h3>{item.name}</h3>
+  const items = contact.map((item) => <ContactItem contact={item} />);
 
-        <p>{item.text}</p>
-      </div>
-    </div>
-  ));
   return (
     <section className="contact">
       <div className="contactTitle">

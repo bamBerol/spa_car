@@ -19,12 +19,16 @@ const Header = () => {
 
   return (
     <>
-      <NavLink to="/" exact className="logo">
-        <h1>Viki Transcar</h1>
-      </NavLink>
-      <nav>
-        <ul className="navList">{navigationList}</ul>
-      </nav>
+      <div className="logoDiv">
+        <NavLink to="/" exact className="logo">
+          <h1>Viki Transcar</h1>
+        </NavLink>
+      </div>
+      <div className="navDiv">
+        <nav>
+          <ul className="navList">{navigationList}</ul>
+        </nav>
+      </div>
     </>
   );
 };

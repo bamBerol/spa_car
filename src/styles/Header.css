@@ -1,6 +1,3 @@
-nav {
-  flex-grow: 1;
-}
 .logo {
   text-decoration: none;
   color: black;
@@ -10,13 +7,20 @@ nav {
   transition: color 0.3s;
   color: green;
 }
+.navDiv {
+  width: 40%;
+}
 
 .navList {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
-  justify-content: space-around;
   list-style-type: none;
   transition: 0.2s;
+  padding: 0;
+  gap: 20px;
 }
 .navList a {
   text-decoration: none;
