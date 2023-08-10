@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /*border: 1px solid black;*/
 }
 
 .contactTitle {
@@ -14,7 +13,7 @@
   width: 100%;
   padding: 25px 60px;
   min-height: 250px;
-  background-image: url("../images/contact.jpg");
+  background-image: url("../images/contact/contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 40%;
@@ -32,5 +31,16 @@
   justify-content: space-evenly;
   flex-grow: 1;
   width: 100%;
-  gap: 10px;
+  padding: 60px 0;
+  gap: 20px;
+}
+.contactWrapperItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.contactWrapperMap {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }

@@ -42,3 +42,13 @@
   color: white;
   padding: 12px 40px;
 }
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  z-index: -1;
+}

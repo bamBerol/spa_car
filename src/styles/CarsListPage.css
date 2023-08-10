@@ -13,7 +13,7 @@
   width: 100%;
   padding: 25px 60px;
   min-height: 250px;
-  background-image: url("../images/car-5383371_1920.jpg");
+  background-image: url("../images/cars/car-5383371_1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 75%;
@@ -22,7 +22,8 @@
   color: white;
 }
 .carsText h3 {
-  padding: 45px;
+  margin: 0;
+  padding: 60px;
 }
 .carsTitle h2 {
   font-size: 35px;
@@ -42,8 +43,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 20px;
   text-decoration: none;
   color: black;
@@ -72,26 +73,26 @@
   background-size: cover;
 }
 .skoda::before {
-  background-image: url("../images/skoda.jpg");
+  background-image: url("../images/cars/skoda.jpg");
   background-position: 46% 75%;
 }
 .toyota::before {
-  background-image: url("../images/toyota.jpg");
+  background-image: url("../images/cars/toyota.jpg");
   background-position: 15% 15%;
 }
 
 .lexus::before {
-  background-image: url("../images/lexus.jpg");
+  background-image: url("../images/cars/lexus.jpg");
   background-position: 40% 20%;
 }
 
 .van::before {
-  background-image: url("../images/van.jpg");
+  background-image: url("../images/cars/van.jpg");
   background-position: 15% 15%;
 }
 
 .minivan::before {
-  background-image: url("../images/minivan.jpg");
+  background-image: url("../images/cars/minivan.jpg");
   background-position: 15% 15%;
 }
 .skoda:hover::before,
