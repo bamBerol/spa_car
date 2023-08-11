@@ -5,7 +5,7 @@ import {
   faPhone,
   faEnvelopeOpen,
 } from "@fortawesome/free-solid-svg-icons";
-import "../styles/ContactItem.css";
+import "../styles/contact/ContactItem.css";
 
 const ContactItem = (props) => {
   let { name, text } = props.contact;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/CarsListPage.css";
+import "../../styles/cars/CarsListPage.css";
 
 const carBrands = ["Toyota", "Skoda", "Lexus", "Minivan", "Van"];
 
@@ -20,13 +20,13 @@ const CarsListPage = () => {
 
   return (
     <section className="cars">
-      <div className="carsTitle">
+      <section className="carsTitle">
         <h2>Samochody</h2>
-      </div>
-      <div className="carsText">
+      </section>
+      <section className="carsText">
         <h3>W naszej ofercie posiadamy następujące samochody:</h3>
-      </div>
-      <div className="carsWrapper">{brandList}</div>
+      </section>
+      <section className="carsWrapper">{brandList}</section>
     </section>
   );
 };

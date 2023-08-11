@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "../Pages/HomePage";
-import CarsListPage from "../Pages/CarsListPage";
-import CarPage from "../Pages/CarPage";
-import ContactPage from "../Pages/ContactPage";
-import ErrorPage from "../Pages/ErrorPage";
+import HomePage from "../Pages/home/HomePage";
+import CarsListPage from "../Pages/car/CarsListPage";
+import CarPage from "../Pages/car/CarPage";
+import ContactPage from "../Pages/contack/ContactPage";
+import ErrorPage from "../Pages/error/ErrorPage";
 
 const Main = () => {
   return (

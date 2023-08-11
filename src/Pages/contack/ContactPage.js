@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Contact.css";
-import ContactItem from "../components/ContactItem";
+import ContactItem from "../../components/ContactItem";
+import "../../styles/contact/Contact.css";
 
 const contact = [
   { name: "Telefon kontaktowy", text: "608 266 289" },
@@ -13,10 +13,10 @@ const ContactPage = () => {
 
   return (
     <section className="contact">
-      <div className="contactTitle">
+      <section className="contactTitle">
         <h2>Skontaktuj się z nami!</h2>
-      </div>
-      <div className="contactWrapper">
+      </section>
+      <section className="contactWrapper">
         <div className="contactWrapperItems">{items}</div>
         <div className="contactWrapperMap">
           <iframe
@@ -28,7 +28,7 @@ const ContactPage = () => {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-      </div>
+      </section>
     </section>
   );
 };

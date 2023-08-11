@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/Header.css";
+import "../styles/header/Header.css";
 
 const navList = [
   { name: "Home", path: "/", exact: true },

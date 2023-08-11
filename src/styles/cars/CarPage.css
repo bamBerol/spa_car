@@ -1,0 +1,62 @@
+.carPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.carPageTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  border: 1px solid black;
+  text-transform: capitalize;
+  font-size: 35px;
+  border-radius: 20px;
+}
+.carPageTitle h2 {
+  margin: 0;
+}
+.carPageText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+.back {
+  padding: 20px;
+  border: none;
+}
+.back a {
+  display: inline-block;
+  position: relative;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+.back a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  transition: all 0.2s;
+  z-index: -1;
+  transform: translateX(-105%);
+}
+.back a:hover::before {
+  transform: translateX(0);
+}
+.back a:hover {
+  color: white;
+}

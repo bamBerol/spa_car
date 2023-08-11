@@ -52,3 +52,10 @@
   border-radius: 20px;
   z-index: -1;
 }
+.bold {
+  font-weight: bold;
+}
+.capital {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
