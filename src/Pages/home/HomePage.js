@@ -10,53 +10,79 @@ const HomePage = () => {
         <div className="shadow"></div>
       </section>
       <section className="homeWrapper">
+        {/* <div className="homeWrapperText">*/}
         <div className="homeWrapperText">
           <div className="homeWrapperTextItem">
             <h3 className="homeWrapperTextItemTitle">
-              Zajmujemy sie wynajmem samochodów:
+              Zajmujemy się wynajmem samochodów:
             </h3>
             <div className="homeWrapperTextItemBoxes">
-              <div className="box bold">osobowych</div>
-              <div className="box bold">dostawczych</div>
-              <div className="box bold">osobowych na taxi</div>
-            </div>
-            <p className="bold">na terenie Polski oraz za granicą.</p>
-          </div>
-          <div className="homeWrapperTextItem">
-            <h3 className="homeWrapperTextItemTitle">
-              W zależności od Twoich potrzeb oferujemy wynajem:
-            </h3>
-            <div className="homeWrapperTextItemBoxes">
-              <div className="box bold">krótkoterminowy</div>
-              <div className="box bold">długoterminowy</div>
               <div className="box bold">
-                jako samochód zastępczy (z OC sprawcy)
+                <p>osobowych</p>
+              </div>
+              <div className="box bold">
+                <p>dostawczych</p>
+              </div>
+              <div className="box bold">
+                <p>osobowych na taxi</p>
               </div>
             </div>
-            <p className="bold">
-              Wszystkie opłaty są u nas{" "}
-              <span className="capital">
-                transparentne - nie mamy nic do ukrycia.
-              </span>
-            </p>
-          </div>
-          <div className="homeSectionTitle">
-            <h2>TAXI</h2>
+            <h3 className="bold">na terenie Polski oraz za granicą.</h3>
           </div>
           <div className="homeWrapperTextItem">
-            <h3 className="homeWrapperTextItemTitle bold">
+            <div>
+              <h3 className="homeWrapperTextItemTitle">
+                W zależności od Twoich potrzeb oferujemy wynajem:
+              </h3>
+            </div>
+            <div className="homeWrapperTextItemBoxes">
+              <div className="box bold">
+                <p>długoterminowy</p>
+              </div>
+              <div className="box bold">
+                <p>krótkoterminowy</p>
+              </div>
+              <div className="box bold">
+                <p>jako samochód zastępczy (z OC sprawcy)</p>
+              </div>
+            </div>
+            <div className="payments">
+              <h3 className="bold">
+                Wszystkie opłaty są u nas{" "}
+                <span className="capital">
+                  transparentne - nie mamy nic do ukrycia.
+                </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <section className="homeSectionTaxi">
+          <div className="homeSectionTaxiTitle">
+            <h2>TAXI</h2>
+          </div>
+          <div className="homeSectionTaxiText">
+            <h3 className="homeSectionTaxiTextTitle bold">
               Jesteśmy partnerem rozliczeniowym kierowców taxi Współpracujemy
               praktycznie ze wszystkimi korporacjami taxi w Warszawie i nie
               tylko. Najwięcej naszych kierowców jeździ dla m.in.:
             </h3>
-            <div className="homeWrapperTextItemBoxes">
-              <div className="box bold">FreeNow</div>
-              <div className="box bold">iTaxi</div>
-              <div className="box bold">Ele Taxi</div>
-              <div className="box bold">Bolt</div>
+            <div className="homeSectionTaxiBoxes">
+              <div className="taxiBox bold">
+                <p>FreeNow</p>
+              </div>
+              <div className="taxiBox bold">
+                <p>iTaxi</p>
+              </div>
+              <div className="taxiBox bold">
+                <p>Ele Taxi</p>
+              </div>
+              <div className="taxiBox bold">
+                <p>Bolt</p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+        {/*</div>*/}
       </section>
     </section>
   );

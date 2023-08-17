@@ -1,6 +1,7 @@
 import React from "react";
 const Skoda = (props) => {
-  return <div>{props.brand} komponent</div>;
+  let brandClass = props.brand + "Brand";
+  return <div className={brandClass}>{props.brand} komponent</div>;
 };
 
 export default Skoda;

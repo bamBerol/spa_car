@@ -1,8 +1,8 @@
 import React from "react";
 
 const Van = (props) => {
-  let { brand } = props;
-  return <div>{brand} komponent</div>;
+  let brandClass = props.brand + "Brand";
+  return <div className={brandClass}>{props.brand} komponent</div>;
 };
 
 export default Van;

@@ -1,3 +1,9 @@
+.navBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .logo {
   text-decoration: none;
   color: black;
@@ -7,10 +13,13 @@
   transition: color 0.3s;
   color: green;
 }
-.navDiv {
-  width: 40%;
+.btn {
+  display: none;
 }
-
+.navDiv {
+  display: flex;
+  align-items: center;
+}
 .navList {
   display: flex;
   flex-direction: row;
@@ -20,7 +29,6 @@
   list-style-type: none;
   transition: 0.2s;
   padding: 0;
-  gap: 20px;
 }
 
 .navList a {
@@ -32,7 +40,7 @@
   overflow: hidden;
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .navList a::before {
   position: absolute;
@@ -56,4 +64,30 @@
 .navList a.active {
   color: black;
   font-weight: bold;
+}
+
+@media (max-width: 780px) {
+  .navBar {
+    flex-direction: column;
+  }
+  .logoDiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+  .navDiv {
+    display: none;
+  }
+  .open {
+    display: flex;
+  }
+  .navList {
+    flex-direction: column;
+  }
+  .btn {
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+  }
 }

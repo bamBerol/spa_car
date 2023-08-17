@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 .carsTitle {
   display: flex;
@@ -23,15 +24,15 @@
 }
 .carsText h3 {
   margin: 0;
-  padding: 60px;
+  padding: 95px 0;
 }
 .carsTitle h2 {
-  font-size: 35px;
+  font-size: 2.25rem;
 }
 .carsWrapper {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
@@ -51,7 +52,7 @@
 }
 .brandName {
   position: relative;
-  font-size: 25px;
+  font-size: 1.25rem;
   display: none;
 }
 .carBrand:hover .brandName {

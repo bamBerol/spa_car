@@ -9,11 +9,14 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 250px;
-  border: 1px solid black;
-  text-transform: capitalize;
+  min-height: 250px;
   font-size: 35px;
   border-radius: 20px;
+  color: white;
+  background-size: cover;
+  padding: 25px 60px;
+  background-image: url("../../images/skoda/skodaBrand.jpg");
+  background-position: 50% 80%;
 }
 .carPageTitle h2 {
   margin: 0;
@@ -25,15 +28,22 @@
   width: 100%;
   height: 100%;
   flex-grow: 1;
+  padding: 40px 0;
+}
+.carPageText h3 {
+  padding: 20px 0;
+  margin: 0;
+}
+.brandPart {
+  padding: 60px 0;
 }
 .back {
-  padding: 20px;
   border: none;
 }
 .back a {
   display: inline-block;
   position: relative;
-  padding: 12px 20px;
+  padding: 20px;
   border-radius: 10px;
   transition: all 0.3s;
   overflow: hidden;
