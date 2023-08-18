@@ -20,9 +20,14 @@ p {
   margin: 0 auto;
 }
 .header {
-  width: 90%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 91%;
+  background-color: white;
   margin: 0 auto;
   gap: 20px;
+  z-index: 5;
 }
 .header p {
   margin: 0;
@@ -30,7 +35,7 @@ p {
 .main {
   display: flex;
   width: 90%;
-  padding: 20px 40px;
+  padding: 20px 0;
   margin: 0 auto;
   flex-grow: 1;
 }
@@ -40,7 +45,7 @@ p {
   justify-content: center;
   background-color: rgb(42, 42, 42);
   color: white;
-  padding: 12px 40px;
+  padding: 12px 0;
 }
 .shadow {
   position: absolute;
@@ -52,10 +57,16 @@ p {
   border-radius: 20px;
   z-index: -1;
 }
-.bold {
-  font-weight: bold;
-}
 .capital {
   text-decoration: underline;
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0;
+  }
+  .footer {
+    text-align: center;
+  }
 }

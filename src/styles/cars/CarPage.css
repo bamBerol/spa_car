@@ -70,3 +70,8 @@
 .back a:hover {
   color: white;
 }
+@media (max-width: 768px) {
+  .carPageText h3 {
+    text-align: center;
+  }
+}

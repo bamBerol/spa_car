@@ -66,7 +66,7 @@
   font-weight: bold;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   .navBar {
     flex-direction: column;
   }
@@ -74,20 +74,34 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0;
   }
   .navDiv {
     display: none;
   }
+  .navDiv nav {
+    width: 100%;
+  }
   .open {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
   .navList {
+    width: 100%;
     flex-direction: column;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin-top: 0;
+  }
+  .navList li:nth-child(1) {
+    margin-top: 5px;
   }
   .btn {
     display: flex;
     padding: 0 40px;
+    padding-right: 10px;
     align-items: center;
   }
 }

@@ -17,17 +17,17 @@ const HomePage = () => {
               Zajmujemy się wynajmem samochodów:
             </h3>
             <div className="homeWrapperTextItemBoxes">
-              <div className="box bold">
+              <div className="box">
                 <p>osobowych</p>
               </div>
-              <div className="box bold">
+              <div className="box">
                 <p>dostawczych</p>
               </div>
-              <div className="box bold">
+              <div className="box">
                 <p>osobowych na taxi</p>
               </div>
             </div>
-            <h3 className="bold">na terenie Polski oraz za granicą.</h3>
+            <h3>na terenie Polski oraz za granicą.</h3>
           </div>
           <div className="homeWrapperTextItem">
             <div>
@@ -36,18 +36,18 @@ const HomePage = () => {
               </h3>
             </div>
             <div className="homeWrapperTextItemBoxes">
-              <div className="box bold">
+              <div className="box">
                 <p>długoterminowy</p>
               </div>
-              <div className="box bold">
+              <div className="box">
                 <p>krótkoterminowy</p>
               </div>
-              <div className="box bold">
+              <div className="box">
                 <p>jako samochód zastępczy (z OC sprawcy)</p>
               </div>
             </div>
             <div className="payments">
-              <h3 className="bold">
+              <h3>
                 Wszystkie opłaty są u nas{" "}
                 <span className="capital">
                   transparentne - nie mamy nic do ukrycia.
@@ -61,22 +61,27 @@ const HomePage = () => {
             <h2>TAXI</h2>
           </div>
           <div className="homeSectionTaxiText">
-            <h3 className="homeSectionTaxiTextTitle bold">
-              Jesteśmy partnerem rozliczeniowym kierowców taxi Współpracujemy
-              praktycznie ze wszystkimi korporacjami taxi w Warszawie i nie
-              tylko. Najwięcej naszych kierowców jeździ dla m.in.:
-            </h3>
+            <div className="homeSectionTaxiTextTitle">
+              <h3>
+                Jesteśmy partnerem rozliczeniowym kierowców taxi. Współpracujemy
+                praktycznie ze wszystkimi korporacjami taxi w Warszawie i nie
+                tylko.
+              </h3>
+            </div>
+            <div className="homeSectionTaxiTextTitle">
+              <h3>Najwięcej naszych kierowców jeździ dla m.in.:</h3>
+            </div>
             <div className="homeSectionTaxiBoxes">
-              <div className="taxiBox bold">
+              <div className="taxiBox">
                 <p>FreeNow</p>
               </div>
-              <div className="taxiBox bold">
+              <div className="taxiBox">
                 <p>iTaxi</p>
               </div>
-              <div className="taxiBox bold">
+              <div className="taxiBox">
                 <p>Ele Taxi</p>
               </div>
-              <div className="taxiBox bold">
+              <div className="taxiBox">
                 <p>Bolt</p>
               </div>
             </div>
