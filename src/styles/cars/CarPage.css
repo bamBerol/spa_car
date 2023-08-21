@@ -70,8 +70,12 @@
 .back a:hover {
   color: white;
 }
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .carPageText h3 {
     text-align: center;
+  }
+  .back a {
+    background-color: #dcdcdc;
+    border-radius: 20px;
   }
 }

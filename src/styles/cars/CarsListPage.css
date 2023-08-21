@@ -107,7 +107,7 @@
   opacity: 0.55;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .cars {
     margin-bottom: 60px;
   }

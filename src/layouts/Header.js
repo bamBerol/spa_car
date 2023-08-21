@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "../styles/header/Header.css";
 
 const navList = [
@@ -20,10 +20,16 @@ class Header extends React.Component {
       menuIsOpen: !this.state.menuIsOpen,
     });
   };
+  handleScrollTop = () => {
+    window.scrollTo({ top: 0 });
+  };
 
   navigationList = navList.map((item) => (
     <li key={item.name}>
-      <NavLink to={item.path} exact={item.exact ? item.exact : false}>
+      <NavLink
+        to={item.path}
+        exact={item.exact ? item.exact : false}
+        onClick={this.handleScrollTop}>
         {item.name}
       </NavLink>
     </li>
@@ -37,7 +43,11 @@ class Header extends React.Component {
             <h1>Viki Transcar</h1>
           </NavLink>
           <div className="btn" onClick={this.handleOpen}>
-            <FontAwesomeIcon icon={faBars} size="xl" />
+            {this.state.menuIsOpen ? (
+              <FontAwesomeIcon icon={faXmark} size="xl" />
+            ) : (
+              <FontAwesomeIcon icon={faBars} size="xl" />
+            )}
           </div>
         </div>
         <div className={this.state.menuIsOpen ? "navDiv open" : "navDiv"}>
