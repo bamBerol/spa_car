@@ -1,8 +1,8 @@
 import React from "react";
 
-const Minivan = (props) => {
-  let brandClass = props.brand + "Brand";
-  return <div className={brandClass}>{props.brand} komponent</div>;
+const Minivan = ({ brand }) => {
+  let brandClass = brand + "Brand";
+  return <div className={brandClass}> Tu będzie lista samochdów {brand}</div>;
 };
 
 export default Minivan;

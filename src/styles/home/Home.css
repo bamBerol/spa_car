@@ -83,11 +83,20 @@
   background-position: 50% 40%;
   z-index: -1;
 }
-.homeSectionTaxiTextTitle {
+.homeSectionTaxiTextTitle,
+.homeSectionTaxiTexSubtitle {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.homeSectionTaxiTextTitle h3 {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+.homeSectionTaxiTextText {
+  background-color: #dcdcdc;
+  border-radius: 20px;
 }
 .homeSectionTaxiBoxes {
   display: flex;

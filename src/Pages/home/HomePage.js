@@ -10,7 +10,6 @@ const HomePage = () => {
         <div className="shadow"></div>
       </section>
       <section className="homeWrapper">
-        {/* <div className="homeWrapperText">*/}
         <div className="homeWrapperText">
           <div className="homeWrapperTextItem">
             <h3 className="homeWrapperTextItemTitle">
@@ -68,26 +67,27 @@ const HomePage = () => {
                 tylko.
               </h3>
             </div>
-            <div className="homeSectionTaxiTextTitle">
-              <h3>Najwięcej naszych kierowców jeździ dla m.in.:</h3>
-            </div>
-            <div className="homeSectionTaxiBoxes">
-              <div className="taxiBox">
-                <p>FreeNow</p>
+            <div className="homeSectionTaxiTextText">
+              <div className="homeSectionTaxiTexSubtitle">
+                <h3>Najwięcej naszych kierowców jeździ dla m.in.:</h3>
               </div>
-              <div className="taxiBox">
-                <p>iTaxi</p>
-              </div>
-              <div className="taxiBox">
-                <p>Ele Taxi</p>
-              </div>
-              <div className="taxiBox">
-                <p>Bolt</p>
+              <div className="homeSectionTaxiBoxes">
+                <div className="taxiBox">
+                  <p>FreeNow</p>
+                </div>
+                <div className="taxiBox">
+                  <p>iTaxi</p>
+                </div>
+                <div className="taxiBox">
+                  <p>Ele Taxi</p>
+                </div>
+                <div className="taxiBox">
+                  <p>Bolt</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        {/*</div>*/}
       </section>
     </section>
   );

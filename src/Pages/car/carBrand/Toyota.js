@@ -1,8 +1,10 @@
 import React from "react";
 
-const Toyota = (props) => {
-  let brandClass = props.brand + "Brand";
-  return <div className={brandClass}>{props.brand} komponent</div>;
+const Toyota = ({ brand }) => {
+  let brandClass = brand + "Brand";
+  return (
+    <div className={brandClass}>Tu będzie lista samochdów marki {brand}</div>
+  );
 };
 
 export default Toyota;

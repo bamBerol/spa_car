@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -10,54 +10,48 @@ const navList = [
   { name: "Kontakt", path: "/contact" },
 ];
 
-class Header extends React.Component {
-  state = {
-    menuIsOpen: false,
-  };
+const Header = () => {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
-  handleOpen = () => {
-    this.setState({
-      menuIsOpen: !this.state.menuIsOpen,
-    });
+  const handleOpen = () => {
+    setMenuIsOpen(!menuIsOpen);
   };
-  handleScrollTop = () => {
+  const handleScrollTop = () => {
     window.scrollTo({ top: 0 });
   };
 
-  navigationList = navList.map((item) => (
-    <li key={item.name}>
+  const navigationList = navList.map(({ name, path, exact }) => (
+    <li key={name}>
       <NavLink
-        to={item.path}
-        exact={item.exact ? item.exact : false}
-        onClick={this.handleScrollTop}>
-        {item.name}
+        to={path}
+        exact={exact ? exact : false}
+        onClick={handleScrollTop}>
+        {name}
       </NavLink>
     </li>
   ));
 
-  render() {
-    return (
-      <div className="navBar">
-        <div className="logoDiv">
-          <NavLink to="/" exact className="logo">
-            <h1>Viki Transcar</h1>
-          </NavLink>
-          <div className="btn" onClick={this.handleOpen}>
-            {this.state.menuIsOpen ? (
-              <FontAwesomeIcon icon={faXmark} size="xl" />
-            ) : (
-              <FontAwesomeIcon icon={faBars} size="xl" />
-            )}
-          </div>
-        </div>
-        <div className={this.state.menuIsOpen ? "navDiv open" : "navDiv"}>
-          <nav>
-            <ul className="navList">{this.navigationList}</ul>
-          </nav>
+  return (
+    <div className="navBar">
+      <div className="logoDiv">
+        <NavLink to="/" exact className="logo">
+          <h1>Viki Transcar</h1>
+        </NavLink>
+        <div className="btn" onClick={handleOpen}>
+          {menuIsOpen ? (
+            <FontAwesomeIcon icon={faXmark} size="xl" />
+          ) : (
+            <FontAwesomeIcon icon={faBars} size="xl" />
+          )}
         </div>
       </div>
-    );
-  }
-}
+      <div className={menuIsOpen ? "navDiv open" : "navDiv"}>
+        <nav>
+          <ul className="navList">{navigationList}</ul>
+        </nav>
+      </div>
+    </div>
+  );
+};
 
 export default Header;
