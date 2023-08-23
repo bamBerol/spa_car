@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <div className="navBar">
       <div className="logoDiv">
-        <NavLink to="/" exact className="logo">
+        <NavLink to="/" exact onClick={handleScrollTop} className="logo">
           <h1>Viki Transcar</h1>
         </NavLink>
         <div className="btn" onClick={handleOpen}>

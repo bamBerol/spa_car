@@ -59,7 +59,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: green;
+  background-color: #1d5740;
   transition: all 0.2s;
   z-index: -1;
   transform: translateX(-105%);

@@ -11,7 +11,7 @@
 
 .logo:hover {
   transition: color 0.3s;
-  color: green;
+  color: #1d5740;
 }
 .btn {
   display: none;
@@ -49,7 +49,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: green;
+  background-color: #1d5740;
   transition: all 0.2s;
   z-index: -1;
   transform: translateX(-105%);
@@ -64,6 +64,9 @@
 .navList a.active {
   color: black;
   font-weight: bold;
+}
+.navList a.active:hover {
+  color: white;
 }
 
 @media (max-width: 950px) {
@@ -93,7 +96,8 @@
     flex-direction: column;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
-    margin-top: 0;
+    margin: 0;
+    margin-bottom: 5px;
   }
   .navList li:nth-child(1) {
     margin-top: 5px;

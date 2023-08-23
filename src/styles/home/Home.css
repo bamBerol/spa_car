@@ -39,7 +39,7 @@
 .homeWrapperTextItem {
   flex: 1;
   text-align: center;
-  background-color: #dcdcdc;
+  background-color: #ebeef0;
   border-radius: 20px;
   padding: 10px;
 }
@@ -95,7 +95,7 @@
   margin-bottom: 60px;
 }
 .homeSectionTaxiTextText {
-  background-color: #dcdcdc;
+  background-color: #ebeef0;
   border-radius: 20px;
 }
 .homeSectionTaxiBoxes {
