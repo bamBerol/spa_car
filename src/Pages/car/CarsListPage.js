@@ -2,15 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/cars/CarsListPage.css";
 
-const carBrands = ["Toyota", "Skoda", "Lexus", "Minivan", "Van"];
+const carBrands = ["Toyota", "Skoda", "Lexus", "Van"];
 
-const CarsListPage = () => {
+const CarsListPage = ({ scrollToTop }) => {
   const brandList = carBrands.map((brand) => {
     let brandName = brand.toLowerCase();
     let brandClass = brandName + " carBrand";
 
     return (
-      <Link key={brandName} to={`/car/${brandName}`} className={brandClass}>
+      <Link
+        key={brandName}
+        to={`/car/${brandName}`}
+        onClick={scrollToTop}
+        className={brandClass}>
         <div className="brandName">
           <h2>{brand}</h2>
         </div>

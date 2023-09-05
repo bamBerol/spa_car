@@ -7,11 +7,17 @@ import Footer from "./Footer";
 import "../styles/App.css";
 
 function App() {
+  const handleScrollTop = () => {
+    window.scrollTo({ top: 0 });
+  };
+
   return (
     <Router>
       <div className="app">
-        <header className="header">{<Header />}</header>
-        <main className="main">{<Main />}</main>
+        <header className="header">
+          {<Header scrollToTop={handleScrollTop} />}
+        </header>
+        <main className="main">{<Main scrollToTop={handleScrollTop} />}</main>
         <footer className="footer">{<Footer />}</footer>
       </div>
     </Router>

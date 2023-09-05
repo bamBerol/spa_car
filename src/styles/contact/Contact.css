@@ -32,7 +32,7 @@
   flex-grow: 1;
   width: 100%;
   padding: 60px 0;
-  gap: 20px;
+  gap: 3rem;
 }
 .contactSubtitle {
   padding-top: 60px;
@@ -44,9 +44,14 @@
   justify-content: space-evenly;
   height: 100%;
 }
+.contactWrapperMap {
+  border-radius: 20px;
+  flex: 1 1 0px;
+}
 .contactWrapperMap iframe {
-  width: 600px;
-  height: 450px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 .contactWrapperMap {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -58,6 +63,7 @@
   background-color: #ebeef0;
   border-radius: 20px;
   padding: 0 20px;
+  flex: 1 1 0px;
 }
 .addressIcon {
   display: flex;
@@ -71,6 +77,7 @@
   }
   .contactWrapper {
     flex-direction: column;
+    gap: 1rem;
   }
   .items {
     width: 100%;

@@ -10,31 +10,27 @@ const navList = [
   { name: "Kontakt", path: "/contact" },
 ];
 
-const Header = () => {
+const Header = ({ scrollToTop }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const handleOpen = () => {
     setMenuIsOpen(!menuIsOpen);
   };
-  const handleScrollTop = () => {
-    window.scrollTo({ top: 0 });
-  };
 
-  const navigationList = navList.map(({ name, path, exact }) => (
-    <li key={name}>
-      <NavLink
-        to={path}
-        exact={exact ? exact : false}
-        onClick={handleScrollTop}>
-        {name}
-      </NavLink>
-    </li>
-  ));
+  const navigationList = navList.map(({ name, path }) => {
+    return (
+      <li key={name}>
+        <NavLink to={path} onClick={scrollToTop}>
+          {name}
+        </NavLink>
+      </li>
+    );
+  });
 
   return (
     <div className="navBar">
       <div className="logoDiv">
-        <NavLink to="/" exact onClick={handleScrollTop} className="logo">
+        <NavLink to="/" onClick={scrollToTop} className="logo">
           <h1>Viki Transcar</h1>
         </NavLink>
         <div className="btn" onClick={handleOpen}>

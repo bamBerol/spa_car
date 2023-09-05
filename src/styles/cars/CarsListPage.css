@@ -15,7 +15,7 @@
   width: 100%;
   padding: 25px 60px;
   min-height: 250px;
-  background-image: url("../../images/cars/car-5383371_1920.jpg");
+  background-image: url("../../images/cars/cars.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 75%;
@@ -32,18 +32,19 @@
 .carsWrapper {
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: flex-start;
+
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 1;
-  gap: 40px;
+  gap: 2rem;
 }
 .carBrand {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   width: 300px;
   height: 300px;
   border-radius: 20px;
@@ -132,7 +133,5 @@
   }
   .carBrand .brandName {
     display: block;
-  }
-  .carBrand {
   }
 }

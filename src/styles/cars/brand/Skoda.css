@@ -1,0 +1,39 @@
+.cardItemOctavia,
+.cardItemSuperb,
+.cardItemSuperbLK {
+  display: flex;
+}
+.cardItemSuperb {
+  margin: 2rem 0;
+}
+.imgCardOctavia,
+.imgCardSuperb,
+.imgCardSuperbLK {
+  width: 250px;
+  height: 250px;
+}
+.imgCardOctavia img,
+.imgCardSuperb img,
+.imgCardSuperbLK img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.imgCardOctavia img {
+  object-position: 55% 50%;
+}
+.imgCardSuperb img {
+  object-position: 45% 50%;
+}
+.imgCardSuperbLK img {
+  object-position: 40% 50%;
+}
+@media (max-width: 950px) {
+  .cardItemOctavia,
+  .cardItemSuperb,
+  .cardItemSuperbLK {
+    flex-direction: column;
+    align-items: center;
+  }
+}

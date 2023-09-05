@@ -1,1 +1,37 @@
-
+.lexusBrand {
+  display: flex;
+  flex-direction: column;
+}
+.cardItemLexus {
+  display: flex;
+}
+.imgCardLexus {
+  width: 250px;
+  height: 250px;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+.textCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1rem;
+}
+.textCard p {
+  margin-top: 0;
+}
+@media (max-width: 950px) {
+  .cardItemLexus {
+    flex-direction: column;
+    align-items: center;
+  }
+  .textCard {
+    align-items: center;
+    margin: 0;
+  }
+  .textCard p {
+    padding: 0 1rem;
+    text-align: center;
+  }
+}

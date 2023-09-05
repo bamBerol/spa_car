@@ -18,7 +18,6 @@ const CarPage = () => {
         <h2>{idNew}</h2>
       </section>
       <section className="carPageText">
-        <h3>W naszej ofercie posiadamy następujące pojazdy:</h3>
         <div className="brandPart">
           <Car id={id} />
         </div>

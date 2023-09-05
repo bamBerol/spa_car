@@ -15,7 +15,7 @@
   color: white;
   background-size: cover;
   padding: 25px 60px;
-  background-image: url("../../images/skoda/skodaBrand.jpg");
+  background-image: url("../../images/cars/carPageTitle.jpg");
   background-position: 50% 80%;
 }
 .carPageTitle h2 {
@@ -30,12 +30,9 @@
   flex-grow: 1;
   padding: 40px 0;
 }
-.carPageText h3 {
-  padding: 20px 0;
-  margin: 0;
-}
 .brandPart {
-  padding: 60px 0;
+  padding: 40px 0;
+  padding-top: 0;
 }
 .back {
   border: none;

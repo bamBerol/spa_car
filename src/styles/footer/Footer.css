@@ -1,3 +1,12 @@
-.footer p {
-  font-size: 1rem;
+.footer {
+  width: 100%;
+}
+.footerBody {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+.footerBody p {
+  font-size: 0.75rem;
 }

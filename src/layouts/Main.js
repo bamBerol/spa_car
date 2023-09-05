@@ -6,12 +6,14 @@ import CarPage from "../Pages/car/CarPage";
 import ContactPage from "../Pages/contact/ContactPage";
 import ErrorPage from "../Pages/error/ErrorPage";
 
-const Main = () => {
+const Main = ({ scrollToTop }) => {
   return (
     <>
       <Routes>
         <Route path="/" exact element={<HomePage />}></Route>
-        <Route path="/cars" element={<CarsListPage />}></Route>
+        <Route
+          path="/cars"
+          element={<CarsListPage scrollToTop={scrollToTop} />}></Route>
         <Route path="/car/:id" element={<CarPage />}></Route>
         <Route path="/contact" element={<ContactPage />}></Route>
         <Route path="*" element={<ErrorPage />}></Route>
