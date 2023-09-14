@@ -41,8 +41,22 @@ const ContactItem = (props) => {
         ) : null}
       </div>
       <div className={textClass}>
-        <h3>{name}</h3>
-        <p>{text}</p>
+        {nameClass === "address" ? (
+          <>
+            <h3>{name}</h3>
+            <a href="https://goo.gl/maps/hNpd98t2Tn8JZCZw9">{text}</a>
+          </>
+        ) : nameClass === "phone" ? (
+          <>
+            <h3>{name}</h3>
+            <a href="tel:+48608266289">{text}</a>
+          </>
+        ) : nameClass === "eMail" ? (
+          <>
+            <h3>{name}</h3>
+            <a href="mailto:vivkitranscar@wp.pl">{text}</a>
+          </>
+        ) : null}
       </div>
     </div>
   );

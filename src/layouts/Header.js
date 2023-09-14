@@ -5,7 +5,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "../styles/header/Header.css";
 
 const navList = [
-  { name: "Home", path: "/", exact: true },
+  { name: "Strona główna", path: "/", exact: true },
   { name: "Samochody", path: "/cars" },
   { name: "Kontakt", path: "/contact" },
 ];

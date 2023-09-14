@@ -14,15 +14,18 @@
 }
 
 .eMailText h3,
-.eMailText p,
 .addressText h3,
-.addressText p,
-.phoneText h3,
-.phoneText p {
+.phoneText h3 {
   margin: 0;
 }
 .eMailText h3,
 .addressText h3,
 .phoneText h3 {
   margin-bottom: 10px;
+}
+.eMailText a,
+.addressText a,
+.phoneText a {
+  color: black;
+  font-size: 1.25rem;
 }

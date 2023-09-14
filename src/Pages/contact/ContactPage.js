@@ -25,6 +25,7 @@ const ContactPage = () => {
         <div className="items">
           <div className="contactWrapperItems">{items}</div>
         </div>
+
         <div className="contactWrapperMap">
           <iframe
             title="company location"
