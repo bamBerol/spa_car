@@ -1,4 +1,5 @@
 import React from "react";
+import freeNow from "../../images/FREE_NOW_Logo_P_RGB.png";
 import "../../styles/home/Home.css";
 
 const HomePage = () => {
@@ -74,6 +75,7 @@ const HomePage = () => {
               <div className="homeSectionTaxiBoxes">
                 <div className="taxiBox">
                   <p>FreeNow</p>
+                  {/*<img src={freeNow} alt="FreeNow" />*/}
                 </div>
                 <div className="taxiBox">
                   <p>iTaxi</p>

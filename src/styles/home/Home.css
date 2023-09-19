@@ -108,6 +108,17 @@
   align-items: center;
   justify-content: center;
 }
+.taxiBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.taxiBox img {
+  width: 100%;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+}
 @media (max-width: 950px) {
   .homeTitle {
     background-position: 30% 50%;

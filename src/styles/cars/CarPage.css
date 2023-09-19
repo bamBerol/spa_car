@@ -56,7 +56,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1d5740;
+  background-color: #fada5e;
   transition: all 0.2s;
   z-index: -1;
   transform: translateX(-105%);
@@ -65,7 +65,7 @@
   transform: translateX(0);
 }
 .back a:hover {
-  color: white;
+  color: black;
 }
 @media (max-width: 950px) {
   .carPageText h3 {

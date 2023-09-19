@@ -1,11 +1,13 @@
 .brandSubtitle h3 {
   margin: 0;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-top: 2.75rem;
+  padding-bottom: 4.75rem;
 }
 .cardItemRenault,
 .cardItemOpel {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cardItemOpel {
   margin-top: 2rem;
