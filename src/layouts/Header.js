@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+
 import "../styles/header/Header.css";
 
 const navList = [
@@ -31,7 +32,7 @@ const Header = ({ scrollToTop }) => {
     <div className="navBar">
       <div className="logoDiv">
         <NavLink to="/" onClick={scrollToTop} className="logo">
-          <h1>Viki Transcar</h1>
+          <h1 className="titleLogo">Viki Transcar</h1>
         </NavLink>
         <div className="btn" onClick={handleOpen}>
           {menuIsOpen ? (

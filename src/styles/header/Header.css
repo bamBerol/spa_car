@@ -1,17 +1,25 @@
 .navBar {
-  width: 100%;
   display: flex;
+  width: 91%;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
 }
 .logo {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
-  color: black;
+  overflow: hidden;
+  background: linear-gradient(to right, #fada5e, #fada5e 50%, black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 0.4s ease;
 }
-
 .logo:hover {
-  transition: color 0.3s;
-  color: #fada5e;
+  background-position: 0 100%;
 }
 .btn {
   display: none;
@@ -36,7 +44,7 @@
   position: relative;
   padding: 12px 20px;
   border-radius: 10px;
-  transition: all 0.3s;
+  transition: all 0.4s;
   overflow: hidden;
   text-decoration: none;
   color: black;
@@ -50,7 +58,7 @@
   width: 100%;
   height: 100%;
   background-color: #fada5e;
-  transition: all 0.2s;
+  transition: all 0.4s;
   z-index: -1;
   transform: translateX(-105%);
 }

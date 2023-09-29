@@ -1,8 +1,14 @@
-import React from "react";
-import freeNow from "../../images/FREE_NOW_Logo_P_RGB.png";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+//import freeNow from "../../images/FREE_NOW_Logo_P_RGB.png";
 import "../../styles/home/Home.css";
 
 const HomePage = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <section className="home">
       <section className="homeTitle">
@@ -12,7 +18,7 @@ const HomePage = () => {
       </section>
       <section className="homeWrapper">
         <div className="homeWrapperText">
-          <div className="homeWrapperTextItem">
+          <div data-aos="fade-right" className="homeWrapperTextItem">
             <h3 className="homeWrapperTextItemTitle">
               Zajmujemy się wynajmem samochodów:
             </h3>
@@ -29,7 +35,7 @@ const HomePage = () => {
             </div>
             <h3>na terenie Polski oraz za granicą.</h3>
           </div>
-          <div className="homeWrapperTextItem">
+          <div data-aos="fade-left" className="homeWrapperTextItem">
             <div>
               <h3 className="homeWrapperTextItemTitle">
                 W zależności od Twoich potrzeb oferujemy wynajem:
@@ -57,18 +63,18 @@ const HomePage = () => {
           </div>
         </div>
         <section className="homeSectionTaxi">
-          <div className="homeSectionTaxiTitle">
+          <div data-aos="fade-left" className="homeSectionTaxiTitle">
             <h2>TAXI</h2>
           </div>
           <div className="homeSectionTaxiText">
-            <div className="homeSectionTaxiTextTitle">
+            <div data-aos="fade-right" className="homeSectionTaxiTextTitle">
               <h3>
                 Jesteśmy partnerem rozliczeniowym kierowców taxi. Współpracujemy
                 praktycznie ze wszystkimi korporacjami taxi w Warszawie i nie
                 tylko.
               </h3>
             </div>
-            <div className="homeSectionTaxiTextText">
+            <div data-aos="fade-left" className="homeSectionTaxiTextText">
               <div className="homeSectionTaxiTexSubtitle">
                 <h3>Najwięcej naszych kierowców jeździ dla m.in.:</h3>
               </div>

@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Bai Jamjuree", sans-serif;
-  /*font-family: "Roboto", sans-serif;*/
+  overflow-x: hidden;
 }
 html {
   font-size: 20px;
@@ -20,10 +20,10 @@ p {
   margin: 0 auto;
 }
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 91%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   gap: 20px;
@@ -37,6 +37,7 @@ p {
   width: 90%;
   padding-top: 20px;
   margin: 0 auto;
+  margin-top: 108px;
   flex-grow: 1;
 }
 .footer {
