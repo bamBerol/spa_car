@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-//import freeNow from "../../images/FREE_NOW_Logo_P_RGB.png";
+import freeNow from "../../images/logo/freenow.png";
+import iTaxi from "../../images/logo/itaxiCzarne.png";
+import bolt from "../../images/logo/boltGreen.svg";
 import "../../styles/home/Home.css";
 
 const HomePage = () => {
@@ -79,18 +81,21 @@ const HomePage = () => {
                 <h3>Najwięcej naszych kierowców jeździ dla m.in.:</h3>
               </div>
               <div className="homeSectionTaxiBoxes">
-                <div className="taxiBox">
-                  <p>FreeNow</p>
-                  {/*<img src={freeNow} alt="FreeNow" />*/}
+                <div className="taxiBox itaxi">
+                  {/* <p>iTaxi</p> */}
+                  <img src={iTaxi} alt="iTaxi" />
                 </div>
-                <div className="taxiBox">
-                  <p>iTaxi</p>
+                <div className="taxiBox freenow">
+                  {/* <p>FreeNow</p> */}
+                  <img src={freeNow} alt="FreeNow" />
                 </div>
-                <div className="taxiBox">
+
+                <div className="taxiBox ele">
                   <p>Ele Taxi</p>
                 </div>
-                <div className="taxiBox">
-                  <p>Bolt</p>
+                <div className="taxiBox bolt">
+                  {/* <p>Bolt</p> */}
+                  <img src={bolt} alt="Bolt" />
                 </div>
               </div>
             </div>

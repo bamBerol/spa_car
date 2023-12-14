@@ -31,12 +31,13 @@
   justify-content: space-evenly;
   flex-grow: 1;
   width: 100%;
-  padding: 60px 0;
+  padding: 65px 0;
+  padding-bottom: 95px;
   gap: 3rem;
 }
 .contactSubtitle {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 65px;
 }
 .contactWrapperItems {
   display: flex;
