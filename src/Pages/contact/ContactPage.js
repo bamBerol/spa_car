@@ -21,10 +21,10 @@ const ContactPage = () => {
 
   return (
     <section className="contact">
-      <section className="contactTitle">
+      <section data-aos="fade-down" className="contactTitle">
         <h2>Kontakt</h2>
       </section>
-      <div data-aos="fade-down" className="contactSubtitle">
+      <div data-aos="fade-left" className="contactSubtitle">
         <h3>Skontaktuj się z nami!</h3>
       </div>
       <section className="contactWrapper">

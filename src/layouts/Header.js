@@ -18,10 +18,15 @@ const Header = ({ scrollToTop }) => {
     setMenuIsOpen(!menuIsOpen);
   };
 
+  const handleClick = () => {
+    scrollToTop();
+    setMenuIsOpen(false);
+  };
+
   const navigationList = navList.map(({ name, path }) => {
     return (
       <li key={name}>
-        <NavLink to={path} onClick={scrollToTop}>
+        <NavLink to={path} onClick={handleClick}>
           {name}
         </NavLink>
       </li>

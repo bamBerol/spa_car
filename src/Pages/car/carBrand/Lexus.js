@@ -5,10 +5,10 @@ const Lexus = ({ brand }) => {
   let brandClass = brand + "Brand";
   return (
     <div className={brandClass}>
-      <div className="brandSubtitle">
+      <div data-aos="fade-left" className="brandSubtitle">
         <h3>W naszej ofercie posiadamy następujące pojazdy:</h3>
       </div>
-      <div className="cardItemLexus">
+      <div data-aos="fade-right" className="cardItemLexus">
         <div className="imgCardLexus">
           <img src="" alt="" />
         </div>

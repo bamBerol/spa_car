@@ -31,10 +31,10 @@ const CarsListPage = ({ scrollToTop }) => {
 
   return (
     <section className="cars">
-      <section className="carsTitle">
+      <section data-aos="fade-down" className="carsTitle">
         <h2>Samochody</h2>
       </section>
-      <section data-aos="fade-down" className="carsText">
+      <section data-aos="fade-left" className="carsText">
         <h3>W naszej ofercie posiadamy następujące samochody:</h3>
       </section>
       <section className="carsWrapper">{brandList}</section>

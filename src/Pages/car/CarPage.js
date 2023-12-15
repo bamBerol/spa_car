@@ -14,7 +14,7 @@ const CarPage = () => {
 
   return (
     <section className="carPage">
-      <section className="carPageTitle">
+      <section data-aos="fade-down" className="carPageTitle">
         <h2>{idNew}</h2>
       </section>
       <section className="carPageText">

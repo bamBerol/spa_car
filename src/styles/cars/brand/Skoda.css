@@ -11,6 +11,7 @@
 .imgCardSuperbLK {
   width: 250px;
   height: 250px;
+  overflow: hidden;
 }
 .imgCardOctavia img,
 .imgCardSuperb img,
@@ -35,5 +36,6 @@
   .cardItemSuperbLK {
     flex-direction: column;
     align-items: center;
+    margin: 60px 0;
   }
 }

@@ -5,10 +5,10 @@ const Toyota = ({ brand }) => {
   let brandClass = brand + "Brand";
   return (
     <div className={brandClass}>
-      <div className="brandSubtitle">
+      <div data-aos="fade-left" className="brandSubtitle">
         <h3>W naszej ofercie posiadamy następujące pojazdy:</h3>
       </div>
-      <div className="cardItemAuris">
+      <div data-aos="fade-right" className="cardItemAuris">
         <div className="imgCardAuris">
           <img src="" alt="" />
         </div>
@@ -17,7 +17,7 @@ const Toyota = ({ brand }) => {
           <p>Aby poznać cenę skontaktuj się z nami.</p>
         </div>
       </div>
-      <div className="cardItemCorolla">
+      <div data-aos="fade-right" className="cardItemCorolla">
         <div className="imgCardCorolla">
           <img src="" alt="" />
         </div>
@@ -26,7 +26,7 @@ const Toyota = ({ brand }) => {
           <p>Aby poznać cenę skontaktuj się z nami.</p>
         </div>
       </div>
-      <div className="cardItemCamry">
+      <div data-aos="fade-right" className="cardItemCamry">
         <div className="imgCardCamry">
           <img src="" alt="" />
         </div>

@@ -13,7 +13,7 @@ const HomePage = () => {
 
   return (
     <section className="home">
-      <section className="homeTitle">
+      <section data-aos="fade-left" className="homeTitle">
         <h2 className="homeTitleTitle">Viki Transcar</h2>
         <p className="homeTitleText">Wynajem samochodów</p>
         <div className="shadow"></div>

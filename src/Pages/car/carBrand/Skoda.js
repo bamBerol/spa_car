@@ -8,10 +8,10 @@ const Skoda = ({ brand }) => {
   let brandClass = brand + "Brand";
   return (
     <div className={brandClass}>
-      <div className="brandSubtitle">
+      <div data-aos="fade-left" className="brandSubtitle">
         <h3>W naszej ofercie posiadamy następujące pojazdy:</h3>
       </div>
-      <div className="cardItemOctavia">
+      <div data-aos="fade-right" className="cardItemOctavia">
         <div className="imgCardOctavia">
           <img src={octavia} alt="Skoda Octavia" />
         </div>
@@ -20,7 +20,7 @@ const Skoda = ({ brand }) => {
           <p>Aby poznać cenę skontaktuj się z nami.</p>
         </div>
       </div>
-      <div className="cardItemSuperb">
+      <div data-aos="fade-right" className="cardItemSuperb">
         <div className="imgCardSuperb">
           <img src={superb} alt="Skoda Superb" />
         </div>
@@ -29,7 +29,7 @@ const Skoda = ({ brand }) => {
           <p>Aby poznać cenę skontaktuj się z nami.</p>
         </div>
       </div>
-      <div className="cardItemSuperbLK">
+      <div data-aos="fade-right" className="cardItemSuperbLK">
         <div className="imgCardSuperbLK">
           <img src={superbLK} alt="Skoda Superb Laurin&Klement" />
         </div>
